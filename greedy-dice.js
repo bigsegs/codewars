@@ -1,15 +1,14 @@
 function score( dice ) {
-    // Fill me in!
-    // 5 nums, in array
-    // use regex.test
-    // start at lowest, remove singles if triple scored
-    let points=0;
-    let str=dice.join("");
-    let arr=[]
-    
-    arr=(str.match(/5/g));
+  // Fill me in!
+  // 5 nums, in array
+  // use regex.test
+  // start at lowest, remove singles if triple scored
+  let points=0;
+  let str=dice.join("");
+  let arr=[]
+  
+  arr=(str.match(/5/g));
     if(arr!=null)points+=arr.length*50;
-   // console.log(arr,points);
     arr=[];
     
     arr=(str.match(/1/g));
